@@ -92,3 +92,30 @@
       font-family: "Open Sans", sans-serif;
       font-weight: 900;
     }
+    /* section one end */
+.section-text{
+    width: 100%;
+    background-color: rgb(41, 40, 40);
+    }
+    
+.section-two{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: start;
+    padding: 40px 130px 0 130px;
+    line-height: 40px;
+    }
+.more {
+    color: rgb(60, 211, 238);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 40px 130px;
+ }
+.more:hover {
+    color: gray;
+    transition: .3s;
+    }    
+/* end section two */
