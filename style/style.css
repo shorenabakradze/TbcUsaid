@@ -190,3 +190,76 @@
     padding-right: 10px;
 } 
 /* end grid section */
+.slider{
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(58, 57, 57);
+}
+.mySlide img:nth-child(2){
+  padding-right: 90px;
+  padding-left: 90px;
+}
+.mySlide img:nth-child(1){
+  padding-left: 10px;
+}
+.mySlide img:nth-child(3){
+  margin-top: -10px;
+}
+.ufcslid{
+  margin-left: 400px;
+}
+.slider h2{
+  color: white;
+  font-size: 30px;
+  font-family: "BPG Algeti", sans-serif;
+  padding-top: 30px;
+  margin-left: 130px;
+  margin-bottom: 50px;
+}
+.slidershow-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.mySlide {
+  display: none;
+
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  margin: 0 auto;
+  padding: 1px;
+  color: white;
+  font-size: 61px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 20px;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  margin-left: 20px;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  color: #717171;
+}
+.dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 50px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
