@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1280px) and (min-width: 769px){
+   
+}
+
+@media only screen and (max-width: 768px) and (min-width: 641px) {
+    .menu-bar {
+        display: block;
+    }
+    .text-nav{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 640px) and (min-width: 320px){
+    .menu-bar{
+        display: block;
+    }
+    .text-nav{
+        display: none;
+    }
+}

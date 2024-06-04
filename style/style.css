@@ -20,12 +20,13 @@
     height: 40px;
   }
   .header-a {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 400;
     font-style: bold;
     color: white;
     margin-left: 12px;
-    font-family: "Open Sans", sans-serif;
+
+    text-transform: uppercase;
   }
   .text-nav {
     width: 550px;
@@ -64,6 +65,62 @@
     font-style: normal;
   }
   /* header end */
+  /* hamburgerBar */
+  .menu-bar {
+   display: none;
+  }
+  .menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menuItem:hover {
+    text-decoration: underline;
+  }
+  
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    /* padding: 10px; */
+    
+    background: rgb(37, 37, 37);
+    color: rgb(28, 151, 204);
+    cursor: pointer;
+  }
+  .menuIcon,
+  .closeIcon {
+    font-size: 22px;
+    font-weight: 900;
+  }
+  .closeIcon {
+    display: none;
+  }
+  
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background:  rgb(41, 40, 40);
+    color: rgb(28, 151, 204);
+    list-style: none;
+    padding-top: 4rem;
+    opacity: 0.8;
+  }
+  
+  .showMenu {
+    transform: translateY(0);
+  }
+  /* hamburgerBar */
   .main-img {
     background-image: url('../photo/background.webp'); 
     background-size: contain;
@@ -110,15 +167,15 @@
     font-weight: 400;
     font-size: 30px;
     text-align: start;
-    padding: 40px 130px 0 130px;
-    line-height: 40px;
+    padding: 40px 140px 0 130px;
+    line-height: 50px;
     }
 .more {
     color: rgb(60, 211, 238);
     font-family: "Open Sans", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 22px;
-    padding: 40px 130px;
+    padding: 50px 130px;
  }
 .more:hover {
     color: gray;
@@ -199,12 +256,13 @@
 .mySlide img:nth-child(2){
   padding-right: 90px;
   padding-left: 90px;
+  padding-bottom: 10px;
 }
 .mySlide img:nth-child(1){
   padding-left: 10px;
 }
 .mySlide img:nth-child(3){
- align-items: center;
+ padding-bottom: 10px;
 }
 .ufcslid{
   margin-left: 400px;
@@ -322,11 +380,15 @@
   display: flex;
 }
 .accor-div a{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
   font-size: 22px; 
   color:  rgb(39, 145, 163);
 }
 
 .accordion-title{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
   font-size: 20px;
   margin-bottom: 10px;
   padding-bottom: 25px;
@@ -339,6 +401,8 @@
   
 }
 .acordion-text p{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
   font-size: 16px;
   padding-left: 30px;
   line-height: 25px;
@@ -347,3 +411,4 @@
 .text-last{
   margin-left: -20px;
 }
+/* fin accordion */

@@ -30,18 +30,19 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="/style/reset.css" />
     <link rel="stylesheet" href="/style/style.css" />
-    <link rel="stylesheet" href="/style/reset.css" />
+    <link rel="stylesheet" href="/style/responsive.css" />
     <link rel="icon" href="/photo/icon.png" />
   </head>
   <body>
     <header>
-      <div class="main-div header-bg">
+      <d class="main-div header-bg">
         <div class="logo">
           <a href="index.html">
             <img src="/photo/208510-cropped.svg" alt="tbc" />
@@ -58,6 +59,20 @@
             </ul>
           </nav>
         </div>
+        <!-- hamburger --> 
+      <div class="menu-bar">
+        <ul class="menu">
+          <li><a class="menuItem" href="#">მთავარი</a></li>
+          <li><a class="menuItem" href="#">TBC IT</a></li>
+          <li><a class="menuItem" href="#">TBC x USAID</a></li>
+          <li><a class="menuItem" href="#">რისკები</a></li>
+        </ul>
+        <button class="hamburger">
+          <i class="menuIcon material-icons">—</i>
+          <i class="closeIcon material-icons">×</i>
+        </button>
+      </div>
+        <script src="/script/hamburger.js" defer></script>
       </div>
     </header>
     <section class="main-img">
@@ -222,10 +237,10 @@
       </div>
       <script src="/script/slider.js" defer></script>
     </section>
-    <section  class="accor-div">
+    <section class="accor-div">
       <div class="titel-div">
-      <h3>ხშირად დასმული კითხვები</h3>
-      <a href="#">ყველა კითხვა</a>
+        <h3>ხშირად დასმული კითხვები</h3>
+        <a href="#">ყველა კითხვა</a>
       </div>
       <div class="accordion-container">
         <div class="container">
