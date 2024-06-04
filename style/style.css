@@ -195,6 +195,7 @@
   margin: 0 auto;
   background-color: rgb(58, 57, 57);
 }
+
 .mySlide img:nth-child(2){
   padding-right: 90px;
   padding-left: 90px;
@@ -203,7 +204,7 @@
   padding-left: 10px;
 }
 .mySlide img:nth-child(3){
-  margin-top: -10px;
+ align-items: center;
 }
 .ufcslid{
   margin-left: 400px;
@@ -218,9 +219,15 @@
 }
 .slidershow-container {
   position: relative;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   overflow: hidden;
+  padding: 50px;
+}
+.fade-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .mySlide {
   display: none;
@@ -229,7 +236,7 @@
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: auto;
   margin: 0 auto;
   padding: 1px;
