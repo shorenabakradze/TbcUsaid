@@ -2,12 +2,26 @@
     width: 100%;
     margin: 0 auto;
     background-color: rgb(37, 37, 37);
-  }
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+    transition: opacity 0.5s, background-color 0.5s;
+}
+.header-bg.hidden {
+    opacity: 0;
+}
+.header-bg.scrolled {
+  opacity: 0.8;
+  background-color: rgba(37, 37, 37, 1); 
+}
 .main-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 130px;
+    
   }
   .logo {
     display: flex;
@@ -25,11 +39,9 @@
     font-style: bold;
     color: white;
     margin-left: 12px;
-
-    text-transform: uppercase;
   }
   .text-nav {
-    width: 550px;
+    max-width: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,13 +84,15 @@
   .menuItem {
     display: block;
     margin: 2rem 4rem;
-    font-size: 1.8rem;
+    font-size: 24px;
     color: white;
-    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
   }
   
   .menuItem:hover {
-    text-decoration: underline;
+    color: rgb(28, 151, 204);
   }
   
   .hamburger {
@@ -86,16 +100,16 @@
     z-index: 100;
     top: 1rem;
     right: 1rem;
-    /* padding: 10px; */
-    
+    border: none;
     background: rgb(37, 37, 37);
     color: rgb(28, 151, 204);
     cursor: pointer;
   }
   .menuIcon,
   .closeIcon {
-    font-size: 22px;
-    font-weight: 900;
+    color: #1c97cc; 
+    font-size: 2rem;
+    padding-top: 10px;
   }
   .closeIcon {
     display: none;
@@ -128,10 +142,12 @@
     background-attachment: scroll;
     position: relative;
     width: 100%;
-    height: 60vh; 
-    z-index: 1;
+    height: 60vh;
+    z-index: 0; 
     background-color: rgb(41, 40, 40); 
-}
+    margin-top: 80px; 
+  }
+
   .second-bg {
     position: absolute;
     z-index: 10;
@@ -191,8 +207,6 @@
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     margin:  0 auto;
     display: grid;
-    /* grid-template-columns: 310px 310px 310px; 
-    grid-template-rows: 400px 400px 400px; */
     row-gap: 20px;
     column-gap: 40px;
     padding:  30px 130px 50px 130px;   
