@@ -107,9 +107,10 @@
   }
   .menuIcon,
   .closeIcon {
-    color: #1c97cc; 
-    font-size: 2rem;
+    color:  rgb(126, 126, 126); ; 
+    font-size: 1.3rem;
     padding-top: 10px;
+
   }
   .closeIcon {
     display: none;
@@ -161,7 +162,6 @@
     padding-left: 10px;
     font-family: "Open Sans", sans-serif;
     font-weight: 900;
-    
   }
   .second-bg h4{
       font-size: 35px;
@@ -268,23 +268,21 @@
 }
 
 .mySlide img:nth-child(2){
-  padding-right: 90px;
-  padding-left: 90px;
-  padding-bottom: 10px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
 }
 .mySlide img:nth-child(1){
   padding-left: 10px;
 }
 .mySlide img:nth-child(3){
  padding-bottom: 10px;
-}
-.ufcslid{
-  margin-left: 400px;
-}
+} */
+
 .slider h2{
   color: white;
   font-size: 30px;
-  font-family: "BPG Algeti", sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding-top: 30px;
   margin-left: 130px;
   margin-bottom: 50px;
@@ -295,16 +293,19 @@
   margin: 0 auto;
   overflow: hidden;
   padding: 50px;
+  
 }
 .fade-div {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.mySlide {
-  display: none;
+.fade-img {
+ width: 250px;
+  height: 80px;
+  padding: 15px;
+} 
 
-}
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -426,3 +427,72 @@
   margin-left: -20px;
 }
 /* fin accordion */
+/* footer */
+.footer-bg{
+  background-color: rgb(58, 57, 57);
+
+}
+.footer-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+  column-gap: 20px;
+}
+.right-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  line-height: 50px;
+  width: 40%;
+  padding: 50px 20px ;
+}
+
+.left-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 40%;
+  padding: 50px 20px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 14px;
+}
+.left-wrapper img{
+  width: 100px;
+  margin-bottom: 20px;
+}
+.img-ft {
+  margin-right: 6px;
+}
+.footer-icon{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  margin-bottom: 30px;
+}
+.textme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-color: rgb(28, 151, 204); 
+  border-radius: 5px;
+  font-weight: 400;
+  width: 150px;
+  height: 30px;
+  text-decoration: none; 
+  transition: color 0.3s ease, background-color 0.3s ease; 
+}
+.textme a {
+  color: #fff; 
+  text-decoration: none;  
+}
+.textme:hover {
+  background-color: #fff;
+}
+.textme:hover a {
+  color: #646060;
+}
+/* footer fin */
