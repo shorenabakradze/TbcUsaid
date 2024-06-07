@@ -1,5 +1,5 @@
 
-  document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', (event) => {
     const headerBg = document.querySelector('.header-bg');
     let lastScrollY = window.scrollY;
 
