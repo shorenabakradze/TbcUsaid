@@ -446,7 +446,8 @@
   align-items: end;
   line-height: 50px;
   width: 40%;
-  padding: 50px 20px ;
+  padding: 50px 20px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .left-wrapper {
@@ -458,6 +459,7 @@
   line-height: 40px;
   color: #fff;
   font-size: 14px;
+  font-family: "Open Sans", sans-serif;
 }
 .left-wrapper img{
   width: 100px;
@@ -484,6 +486,7 @@
   height: 30px;
   text-decoration: none; 
   transition: color 0.3s ease, background-color 0.3s ease; 
+  font-family: "Open Sans", sans-serif;
 }
 .textme a {
   color: #fff; 
@@ -496,3 +499,56 @@
   color: #646060;
 }
 /* footer fin */
+.rule-menu {
+  cursor: pointer;
+  width: 40px;
+}
+.rule-menu i {
+  display: block;
+  height: 4px;
+  padding: 30px;
+  margin: 6px 5px;
+}
+.off-screen-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(37, 37, 37);
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 0 30px;
+  overflow-y: scroll;
+}
+.off-screen-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.off-screen-menu {
+-ms-overflow-style: none;  
+scrollbar-width: none; 
+}
+.off-screen-menu p {
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.off-screen-menu h4 {
+ font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+}
+.off-screen-menu .container {
+  padding: 20px;
+}
+
+/* Show menu */
+.off-screen-menu.show {
+  right: 0;
+}
+#terms {
+  cursor: pointer;
+}
