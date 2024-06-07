@@ -235,16 +235,14 @@
         padding: 20px;
       }
     
-      .fade-div {
-        flex-direction: column;
-      }
-          .fade-img {
+        .fade-img {
         width: 170px;
          height: 60px;
          padding: 10px;
        } 
-      .mySlide img {
-        padding: 15px 0;
+       .mySlide {
+        flex-direction: column;
+        
       }
     
       .ufcslid {
@@ -255,6 +253,9 @@
     
       .prev, .next {
         font-size: 40px;
+      }
+      .fade-div {
+        flex-direction: column;
       }
     }
     
@@ -270,8 +271,9 @@
         padding: 10px;
       }
     
-      .fade-div {
+      .mySlide {
         flex-direction: column;
+        
       }
       .fade-img {
         width: 150px;
@@ -304,5 +306,11 @@
           }
       .textme {
         width: 100px;
+      }
+      .off-screen-menu {
+        width: 100%;
+      }
+      .accordion-title::before{
+        display: none;
       }
 }
